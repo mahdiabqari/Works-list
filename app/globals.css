@@ -2,32 +2,267 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+html{
+  scroll-behavior: smooth;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+.body{
+  background-color: #003042;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='911' height='759.2' viewBox='0 0 1080 900'%3E%3Cg fill-opacity='0.03'%3E%3Cpolygon fill='%23444' points='90 150 0 300 180 300'/%3E%3Cpolygon points='90 150 180 0 0 0'/%3E%3Cpolygon fill='%23AAA' points='270 150 360 0 180 0'/%3E%3Cpolygon fill='%23DDD' points='450 150 360 300 540 300'/%3E%3Cpolygon fill='%23999' points='450 150 540 0 360 0'/%3E%3Cpolygon points='630 150 540 300 720 300'/%3E%3Cpolygon fill='%23DDD' points='630 150 720 0 540 0'/%3E%3Cpolygon fill='%23444' points='810 150 720 300 900 300'/%3E%3Cpolygon fill='%23FFF' points='810 150 900 0 720 0'/%3E%3Cpolygon fill='%23DDD' points='990 150 900 300 1080 300'/%3E%3Cpolygon fill='%23444' points='990 150 1080 0 900 0'/%3E%3Cpolygon fill='%23DDD' points='90 450 0 600 180 600'/%3E%3Cpolygon points='90 450 180 300 0 300'/%3E%3Cpolygon fill='%23666' points='270 450 180 600 360 600'/%3E%3Cpolygon fill='%23AAA' points='270 450 360 300 180 300'/%3E%3Cpolygon fill='%23DDD' points='450 450 360 600 540 600'/%3E%3Cpolygon fill='%23999' points='450 450 540 300 360 300'/%3E%3Cpolygon fill='%23999' points='630 450 540 600 720 600'/%3E%3Cpolygon fill='%23FFF' points='630 450 720 300 540 300'/%3E%3Cpolygon points='810 450 720 600 900 600'/%3E%3Cpolygon fill='%23DDD' points='810 450 900 300 720 300'/%3E%3Cpolygon fill='%23AAA' points='990 450 900 600 1080 600'/%3E%3Cpolygon fill='%23444' points='990 450 1080 300 900 300'/%3E%3Cpolygon fill='%23222' points='90 750 0 900 180 900'/%3E%3Cpolygon points='270 750 180 900 360 900'/%3E%3Cpolygon fill='%23DDD' points='270 750 360 600 180 600'/%3E%3Cpolygon points='450 750 540 600 360 600'/%3E%3Cpolygon points='630 750 540 900 720 900'/%3E%3Cpolygon fill='%23444' points='630 750 720 600 540 600'/%3E%3Cpolygon fill='%23AAA' points='810 750 720 900 900 900'/%3E%3Cpolygon fill='%23666' points='810 750 900 600 720 600'/%3E%3Cpolygon fill='%23999' points='990 750 900 900 1080 900'/%3E%3Cpolygon fill='%23999' points='180 0 90 150 270 150'/%3E%3Cpolygon fill='%23444' points='360 0 270 150 450 150'/%3E%3Cpolygon fill='%23FFF' points='540 0 450 150 630 150'/%3E%3Cpolygon points='900 0 810 150 990 150'/%3E%3Cpolygon fill='%23222' points='0 300 -90 450 90 450'/%3E%3Cpolygon fill='%23FFF' points='0 300 90 150 -90 150'/%3E%3Cpolygon fill='%23FFF' points='180 300 90 450 270 450'/%3E%3Cpolygon fill='%23666' points='180 300 270 150 90 150'/%3E%3Cpolygon fill='%23222' points='360 300 270 450 450 450'/%3E%3Cpolygon fill='%23FFF' points='360 300 450 150 270 150'/%3E%3Cpolygon fill='%23444' points='540 300 450 450 630 450'/%3E%3Cpolygon fill='%23222' points='540 300 630 150 450 150'/%3E%3Cpolygon fill='%23AAA' points='720 300 630 450 810 450'/%3E%3Cpolygon fill='%23666' points='720 300 810 150 630 150'/%3E%3Cpolygon fill='%23FFF' points='900 300 810 450 990 450'/%3E%3Cpolygon fill='%23999' points='900 300 990 150 810 150'/%3E%3Cpolygon points='0 600 -90 750 90 750'/%3E%3Cpolygon fill='%23666' points='0 600 90 450 -90 450'/%3E%3Cpolygon fill='%23AAA' points='180 600 90 750 270 750'/%3E%3Cpolygon fill='%23444' points='180 600 270 450 90 450'/%3E%3Cpolygon fill='%23444' points='360 600 270 750 450 750'/%3E%3Cpolygon fill='%23999' points='360 600 450 450 270 450'/%3E%3Cpolygon fill='%23666' points='540 600 630 450 450 450'/%3E%3Cpolygon fill='%23222' points='720 600 630 750 810 750'/%3E%3Cpolygon fill='%23FFF' points='900 600 810 750 990 750'/%3E%3Cpolygon fill='%23222' points='900 600 990 450 810 450'/%3E%3Cpolygon fill='%23DDD' points='0 900 90 750 -90 750'/%3E%3Cpolygon fill='%23444' points='180 900 270 750 90 750'/%3E%3Cpolygon fill='%23FFF' points='360 900 450 750 270 750'/%3E%3Cpolygon fill='%23AAA' points='540 900 630 750 450 750'/%3E%3Cpolygon fill='%23FFF' points='720 900 810 750 630 750'/%3E%3Cpolygon fill='%23222' points='900 900 990 750 810 750'/%3E%3Cpolygon fill='%23222' points='1080 300 990 450 1170 450'/%3E%3Cpolygon fill='%23FFF' points='1080 300 1170 150 990 150'/%3E%3Cpolygon points='1080 600 990 750 1170 750'/%3E%3Cpolygon fill='%23666' points='1080 600 1170 450 990 450'/%3E%3Cpolygon fill='%23DDD' points='1080 900 1170 750 990 750'/%3E%3C/g%3E%3C/svg%3E");
+  color: rgba(25, 25, 25, 0.94);
+  scroll-behavior: smooth;
+}
+
+.con-header{
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.header{
+  position: sticky;
+  z-index: 1;
+  top: 0;
+  background-color: rgba(170, 231, 231, 0.608);
+  backdrop-filter: blur(15px);
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius:20px;
+  box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+}
+
+.list-first{
+  font-size: large;
+  cursor: pointer;
+  border-bottom: 2px solid rgba(170, 231, 231, 0.608);
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius:5px;
+}
+.list-first:hover{
+  border-bottom: 2px solid black;
+  transition: all 0.5s;
+}
+
+.btn{
+  background-color: green;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 10px;
+}
+.btn:hover{
+  background-color: rgba(50, 227, 50, 0.859);
+  transition: all 0.5s;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.top{
+  background-image: url("https://imgurl.ir/uploads/p389872_156422967.jpg");
+  background-size: 100vw 85vh;
+  background-repeat: no-repeat;
+  animation: changeheight 1.5s normal;
+  color: rgb(255, 255, 255);
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+@keyframes changeheight {
+  0%{
+      height: 20rem;
+  }
+  100%{
+      height: 40rem;
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.title{
+  font-size: 50px;
+}
+.paragraf{
+  font-size: 20px;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
+.bottom{
+  margin-top: 14rem;
+  background-color: rgba(1, 188, 195, 0.745);
+  backdrop-filter: blur(8px);
+  animation: changeheight_tow 3s normal;
+  width: 50rem;
+  margin-left: 350px;
+  padding: 40px 20px;
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+
+@keyframes changeheight_tow {
+  0%{
+    left: 40px;
+    color: rgba(1, 188, 195, 0.745);
+    opacity: 0.12;
   }
+  100%{
+    left: 0;
+    color: rgb(255, 255, 255);
+    opacity: 1;
+  }
+}
+
+#mahdi{
+  border-radius:0;
+  border-top-right-radius:100px;
+  border-bottom-right-radius:100px;
+}
+#mahdi:hover{
+  background-color: rgb(190, 252, 195);
+  transition: all 0.5s;
+}
+
+#ali{
+  border-radius:0;
+  border-top-left-radius:100px;
+  border-bottom-left-radius:100px;
+}
+#ali:hover{
+  background-color: rgb(190, 252, 195);
+  transition: all 0.5s;
+}
+
+.image{
+  display: inline-block;
+  animation: img 1s forwards;
+}
+
+.container-img{
+  border-radius: 30px;
+  box-shadow: 0 0 0 2px rgb(7, 8, 8);
+}
+
+.left{
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.overflow{
+  width: 20rem;
+  height: 30rem;
+  overflow: hidden;
+}
+
+@keyframes img {
+  from {
+    opacity: 0.30;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.img-tow:hover{
+  transform: scale(1.25);
+  transition: all 1s;
+  cursor: pointer;
+}
+
+.rightt{
+  background-color: rgba(1, 188, 195, 0.745);
+  backdrop-filter: blur(8px);
+  padding: 40px 20px;
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+
+.container-cards{
+  background-color: rgba(40, 73, 73, 0.43);
+  padding: 40px 70px;
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+}
+.top_tow{
+  background: linear-gradient(to bottom , rgba(0, 229, 229, 0.638) , rgba(0, 164, 164, 0.468));
+  backdrop-filter: blur(8px);
+  padding: 20px 40px;
+  border-top-left-radius:40px;
+  border-top-right-radius:40px;
+  color: white;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+
+.card_one{
+  border: solid rgba(34, 56, 56, 0.43) 2px;
+  color: rgb(255, 255, 255);
+  background-color: rgba(43, 142, 162, 0.86);
+  box-shadow: rgba(20, 31, 41, 0.17) 0px -23px 25px 0px inset, rgba(21, 24, 48, 0.15) 0px -36px 30px 0px inset, rgba(11, 75, 124, 0.1) 0px -79px 40px 0px inset, rgba(28, 8, 182, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(7, 109, 169, 0.09) 0px 32px 16px;
+}
+
+.modal-card{
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(86, 86, 86, 0.205);
+  animation: bgmodal 0.5s normal;
+  z-index: 5;
+}
+@keyframes bgmodal {
+  from{
+    background-color: #f1f1f100;
+  }
+  to{
+    background-color: rgba(86, 86, 86, 0.205);
+  }
+}
+
+
+.card-one-modal{
+  margin: 200px auto;
+  animation: modal 0.5s normal;
+  z-index: 5;
+}
+@keyframes modal {
+  from{
+    opacity: 0.5;
+    transform: scale(0.75);
+  }
+  to{
+    opacity:1;
+    transform: scale(1);
+  }
+}
+
+.titr{
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px;
+  background-color: rgba(95, 158, 160, 0.833);
+}
+.message{
+  background: linear-gradient(to bottom , rgba(95, 158, 160, 0.833) ,rgba(85, 109, 111, 0.605));
+}
+.explain{
+  background: linear-gradient(to bottom , rgba(85, 109, 111, 0.605) ,rgba(63, 75, 75, 0.485));
+}
+
+.eitaa{
+  background: linear-gradient(to bottom , rgba(110, 183, 186, 0.833) ,rgba(94, 121, 123, 0.605));
+  box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
+}
+.number{
+  background: linear-gradient(to bottom , rgba(94, 121, 123, 0.605) ,rgba(61, 77, 78, 0.605));
+  box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
+}
+.instagram{
+  background: linear-gradient(to bottom , rgba(61, 77, 78, 0.605) ,rgba(40, 50, 51, 0.605));
+  box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
+}
+
+
+#emergency{
+  line-height: 40px;
+}
+
+.footer{
+  z-index: 1;
+  background-color: rgba(170, 231, 231, 0.608);
+  backdrop-filter: blur(15px);
+  box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+}
+
+.con{
+  z-index: 1;
 }
